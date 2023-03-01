@@ -1,0 +1,82 @@
+html{
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    --color-font:#494949;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0px;
+}
+
+.box{  
+    background-color: #ECECEC;
+    top: 0px;
+    width: 100vw;
+    height: 96px;
+    position: sticky;
+    min-width: 420px;
+}
+.box .inner {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+
+}
+.box .timer-box{
+    display: flex;
+    align-items: center;
+}
+.box .title{
+    margin: 0 10px;
+}
+.box .title h1{
+    color: var(--color-font);
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.box .title h1.alert{
+    color: #E06D6D;
+}
+
+.box .icon{
+    background-image: url('../src/images/bomb.svg');
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 10px;
+    fill: #494949;
+    transition: .4s;
+  
+}
+.box .icon.alert{
+    background-image: url('../src/images/bomb-alert.svg');
+}
+.box .icon.explode{
+    background-image: url('../src/images/explode.svg');
+    transform: scale(1.3);
+}
+.box .timer p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: left;
+    transform: (0,0);
+    color: var(--color-font);
+}
+.box .links {
+    display: flex;
+    gap:10px;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.box .link a{
+    color:#494949;
+}
